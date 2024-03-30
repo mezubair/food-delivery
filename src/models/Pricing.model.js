@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../db/connection');
-const Organization = require('./Organization');
-const Item = require('./Item');
+const Organization = require('./Organization.model');
+const Item = require('./Item.model');
 
 const Pricing = sequelize.define('Pricing', {
   organization_id: {

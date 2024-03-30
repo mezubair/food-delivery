@@ -1,4 +1,4 @@
-const Pricing = require('../models/Pricing');
+const Pricing = require('../models/Pricing.model');
 
 async function calculatePrice({ zoneLowerCase, organization_id, total_distance, itemTypeLowerCase }) {
     try {

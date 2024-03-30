@@ -17,7 +17,7 @@ const options = {
       },
     ],
   },
-  apis: [path.resolve(__dirname, './routes/pricingRoutes.js')],
+  apis: [path.resolve(__dirname, './routes/Pricing.routes.js')],
 };
 
 const specs = swaggerJsdoc(options);

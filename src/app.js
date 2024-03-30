@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const pricingRoutes = require('./routes/pricingRoutes');
+const pricingRoutes = require('./routes/Pricing.routes');
 const swaggerSetup = require('./swaggerSetup')
 
 dotenv.config();
