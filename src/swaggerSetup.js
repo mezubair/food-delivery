@@ -12,7 +12,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:3000', 
+        url: 'https://food-delivery-nrc1.onrender.com/', 
         description: 'Development server',
       },
     ],
