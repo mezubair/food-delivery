@@ -31,13 +31,7 @@ const router = express.Router();
  *     responses:
  *       200:
  *         description: Successfully calculated price.
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 price:
- *                   type: number
+ *         
  */
 
 router.post('/calculate-price', calculateTotalPrice);
