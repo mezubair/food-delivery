@@ -15,10 +15,8 @@ const sequelize = new Sequelize({
             require: true
         }
     },
-    // logging: false
+    logging: false
 });
-
-// Function to execute SQL data insertion commands
 
 
 (async () => {
@@ -26,7 +24,7 @@ const sequelize = new Sequelize({
         await sequelize.sync({ force: false });
         console.log('All models were synchronized. Connected Successfully');
         
-        // Execute SQL data insertion commands
+    
         // await insertData();
     } catch (error) {
         console.error('Unable to synchronize models with the database:', error);
@@ -35,7 +33,7 @@ const sequelize = new Sequelize({
 
 async function insertData() {
     try {
-        // Read the SQL data insertion file
+      
         const sqlData = fs.readFileSync('query.sql', 'utf8');
 
         // Execute the SQL commands

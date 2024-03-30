@@ -1,5 +1,5 @@
 const express = require('express');
-const {calculatePrice} = require('../controllers/pricingControl');
+const {calculateTotalPrice} = require('../controllers/pricing.controller');
 
 const router = express.Router();
 
@@ -38,7 +38,7 @@ const router = express.Router();
  */
 
 
-router.post('/calculate-price',calculatePrice);
+router.post('/calculate-price',calculateTotalPrice);
 
 
 module.exports = router;
